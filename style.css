@@ -32,11 +32,12 @@ body {
     padding: 2rem 2rem;
     box-shadow: 0px 3px 10px rgb(248, 246, 246, 0.5);
     transition: 0.4s;
+    
 }
 
 .first-container:hover{
     box-shadow: none;
-
+    transform: scale(0.98);
 }
 
 .first-container img {
@@ -137,6 +138,7 @@ body {
 
 .thanks-container:hover{
     box-shadow: none;
+    transform: scale(0.98);
 }
 
 .thanks-container img {
