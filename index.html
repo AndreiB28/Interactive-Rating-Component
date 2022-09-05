@@ -4,32 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
     <title>Interactive Rating Component</title>
 </head>
 <body>
     <!--First Container-->
     <div class="first-container">
         <img src="images/icon-star.svg" alt="">
-        <h1>How did we do</h1>
+        <h1>How did we do?</h1>
         <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
         <ul>
-            <li><button>1</button></li>
-            <li><button>2</button></li>
-            <li><button>3</button></li>
-            <li><button>4</button></li>
-            <li><button>5</button></li>
+            <li><button class="btn">1</button></li>
+            <li><button class="btn">2</button></li>
+            <li><button class="btn">3</button></li>
+            <li><button class="btn">4</button></li>
+            <li><button class="btn">5</button></li>
         </ul>
         <button class="submit-btn" id="submit">SUBMIT</button>
     </div>
     <!--End of first container-->
-<div class="thanks-container">
-    <img src="images/illustration-thank-you.svg" alt="">
-    <p class="unrated"> You selected <span id="rating">1</span> out of 5</p>
-    <h2>Thank you!</h2>
-    <p> We appreciate you taking the time to give a rating. If you ever need
-        more support, don’t hesitate to get in touch!</p>
-</div>
     <!--Thank you container-->
+<div class="thanks-container hidden">
+    <img src="images/illustration-thank-you.svg" alt="">
+    <p class="unrated"> You selected <span id="rating"></span> out of 5</p>
+    <h2>Thank you!</h2>
+    <p class="para"> We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!</p>
+    <button class="submit-btn" id="rate-again">RATE AGAIN</button>
+</div>
+<!--End of thanks container-->
+<!--Details and credits-->
     <div class="details">
         Challenge by
         <a
@@ -38,7 +43,7 @@
           rel="noreferrer"
           >Frontend Mentor</a
         >. Coded by
-        <a href="https://tsbsankara.netlify.app" target="_blank" rel="noreferrer"
+        <a href="https://github.com/AndreiB28" target="_blank" rel="noreferrer"
           >Andrei Buzu</a
         >.
       </div
